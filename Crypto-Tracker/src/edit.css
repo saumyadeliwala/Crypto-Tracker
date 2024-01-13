@@ -1,0 +1,243 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: font;
+  src: url(BaseNeueTrial-Black-BF63d645de45c8a.ttf);
+}
+
+@font-face{
+  font-family: font2;
+  src:url(Tiffany\ Laurence.ttf)
+}
+
+body{
+  background-color: #000000;
+}
+
+.header{
+  font-size: 1cm;
+  font-family: font;
+}
+
+.Market{
+  font-size: 0.5cm;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.Market h1{
+  color :white;  
+  display: flex;
+  /* border: 1px solid white; */
+  position: relative;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%,0);
+  font-family: font;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.market-section {
+  /* background-color: black; */
+  /* padding: 5rem 0; */
+}
+
+.market-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.market-content h2 {
+  color: white;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 430px) {
+  .market-content h2 {
+    font-size: 4rem;
+  }
+}
+
+.market-content__coin-list {
+  padding-bottom: 50px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  /* white-space: nowrap; */
+  /* overflow-x: auto; */
+  text-align: center  ;
+}
+
+.market-content__coin-list__top {
+  display: grid;
+  grid-template-columns: 16fr 25fr 25fr 25fr;
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  border-radius: 15px 15px 0 0;
+  gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  .market-content__coin-list__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Media query styles for .market-content__coin-list__top p */
+@media (max-width: 800px) {
+  .market-content__coin-list__top p {
+    width: 18rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .market-content__coin-list__top {
+    width: fit-content;
+  }
+}
+
+.market-content__coin-list__top p:first-child {
+  text-align: center;
+}
+
+/* .market-content__coin-list__pagination {
+  display: flex;
+  gap: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.market-content__coin-list__pagination button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+} */
+
+.activePagi {
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: white;
+}
+
+.coin-row {
+  display: grid;
+  grid-template-columns: 16fr 25fr 25fr 25fr;
+  color: white;
+  font-size: 20px;
+  padding: 25px 15px;
+  text-align: center; /* Align text in the center */
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid white;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+  user-select: none;
+}
+
+.coin-row:hover {
+  background-color: #200840;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 700px) {
+  .coin-row {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .coin-row p:last-child {
+    width: 23rem;
+  }
+
+  .coin-row p {
+    width: 15rem;
+  }
+
+}
+
+.coin-row .green-text {
+  color: green;
+}
+
+.coin-row .red-text {
+  color: red;
+}
+
+.market-content__coin-list__top{
+  font-family: font;
+  font-size: 25px;
+}
+
+/* Remove underline from links */
+.market-content__coin-list__row a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.coin-row span {
+  /* width: 19rem; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.coin-row img {
+  width: 70px;
+  padding-right: 15px;
+}
+
+.pagination-item {
+  padding: 10px 15px; /* Adjust padding as needed */
+  margin: 50px 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  width: 4rem;
+  height: auto ;
+  font-size: 25px; /* Adjust font size as needed */
+  cursor: pointer;
+  border: 1px solid #007bff; /* Button border color */
+  background-color: #f3f2f4;
+  color: black; /* Button text color */
+  clip-path: circle(42%);
+}
+
+.pagination-item.active {
+  background: linear-gradient(25deg, #2600fc, #ff00ea); /* Active button background color */
+  color: #fff; /* Active button text color */
+  border: 1px ; /* Active button border color */
+}
+
+.pagination-item:hover {
+  background: linear-gradient(25deg, #2600fc, #ff00ea); /* Active button background color */
+}
+
+

@@ -1,0 +1,117 @@
+/* navbar.css */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(0,0,0);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(19,7,73,1) 50%); */
+}
+
+
+.header {
+  display: flex;
+  width: 100%;
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  margin-top: 25px;
+  padding: 10px 45px 10px 45px;
+  color: white;
+  /* z-index: 1; */
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.logo svg{
+  font-size:0.4cm ;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  }
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav ul .home {
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.nav ul li {
+  font-size: 25px; /* Adjust the size as needed */
+  cursor: pointer;
+}
+
+.nav ul li:hover ,.nav ul .home  li a:hover{
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(25deg,#2600fc,#ff00ea);
+  color: transparent;
+}
+
+.nav ul li a{
+  display: flex;
+}
+
+.nav .icon{
+  display: flex;
+  gap: 1rem;
+}
+
+.nav .icon li a{ 
+  font-size: 30px;
+}
+
+/* Adjust the size of the faArrowRightToBracket icon */
+.nav .icon li [data-icon='arrow-right-to-bracket'] {
+  font-size: 30px;
+  color: white; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the faArrowRightToBracket icon */
+.nav .icon li [data-icon='arrow-right-to-bracket']:hover {
+  color: #ff00ea;
+}
+
+
+.nav ul a {
+  font-size: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  /* font-size: 1.2rem; */
+}
+
+.nav ul .home  li a{
+  color: white;
+}
+
+.nav .icon li a:hover{
+  color: #ff00ea;
+} 

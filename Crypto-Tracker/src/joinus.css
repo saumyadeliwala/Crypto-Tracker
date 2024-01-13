@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.joinus{
+    position: absolute;
+    top: 320%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-bottom: 50px;
+}
+
+.join h1 {
+    padding-bottom: 80px;
+    width: 100%;
+    /* border: 2px solid white; */
+    color: white;
+    font-size: 3cm;
+    font-family: font;
+}
+
+.join .icon ,.join .icon2  {
+    margin-bottom: 15px;
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.join .icon li a {
+    color: white;
+    font-size: 1cm;
+    transition: color 0.3s ease;
+}
+
+.join .icon2 li a {
+    text-decoration: none;
+    font-family: font;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.join .icon li a:hover{
+    color: #ff00ea;
+}
+
+.join .icon2 li a:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg,#2600fc,#ff00ea);
+    color: transparent;
+} 
